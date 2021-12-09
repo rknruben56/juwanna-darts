@@ -1,23 +1,15 @@
-import React from 'react';
-import { Navbar, Container } from 'react-bootstrap';
-import styled from '@emotion/styled';
+import { Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import Games from './pages/Games';
 
-let StyledBrand = styled.div`
-  color: white;
-`
 
 function App() {
   return (
     <>
-      <Navbar bg="dark">
-        <Container>
-          <Navbar.Brand href="#">
-            <StyledBrand>
-              JuWanna Darts
-            </StyledBrand>
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Games />}/>
+      </Routes>
     </>
   );
 }
