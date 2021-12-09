@@ -1,26 +1,24 @@
 import { Navbar, Container } from 'react-bootstrap';
 import styled from '@emotion/styled';
 
-let NavContainer = styled.div`
+let StyledNavContainer = styled.div`
   margin-bottom: 25px;
 `
-let StyledBrand = styled.div`
+let StyledNavBrand = styled.div`
   color: white;
 `
 
 function Navigation() {
   return (
-    <NavContainer>
+    <StyledNavContainer>
       <Navbar bg="dark">
         <Container>
           <Navbar.Brand href="#">
-            <StyledBrand>
-              JuWanna Darts
-            </StyledBrand>
+            <StyledNavBrand>JuWanna Darts</StyledNavBrand>
           </Navbar.Brand>
         </Container>
       </Navbar>
-    </NavContainer>
+    </StyledNavContainer>
   );
 }
 
