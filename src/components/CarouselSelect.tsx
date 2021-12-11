@@ -7,7 +7,7 @@ let StyledItem = styled.div`
   padding: 5em;
 `
 
-export interface CarouselProps {
+interface CarouselProps {
   items: string[];
   onSelect?: (item: string) => void;
 }
